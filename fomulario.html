@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <meta charset="UTF - 8">
+       <meta http-equiv="x-UA-compatible" content="IE=7">
+       <title> Formulários </title>
+    </head>
+
+    
+    <body>
+      <h1>Formulário</h1>
+      <form action="index.html"> 
+           <label for="name"> Primeiro Nome</label>    
+           <input type="text" name="name"> <br><br>
+
+           <label for="surname"> Sobrenome </label>
+           <input type="text" name="surname"><br><br>
+
+         <label for="age">Idade: </label> 
+         <input type="number" name="age">
+
+         <label for="date">Data de Nascimento</label>
+         <input type="date" name="date">
+
+         <label for="password">Senha</label>
+         <input type="password" name="password" id="password"><br><br>
+
+         <label for="file">Imagem</label>
+         <input type="file" name="file" id="file"
+           accept="image/png, image/jpeg>">
+         
+      
+
+
+           <input type="submit" value="Enviar">
+      </form>
+      <!-- Checkbox -->
+      <form>
+          <h3> Frutas </h3>
+          <input type="checkbox" name="laranja" value="laranja">
+          <label for="laranja">Laranja</label>
+
+          <input type="checkbox" name="frutas" value="uva">
+          <label for="uva"> Uva </label>
+
+          <input type="checkbox" name="frutas" value="manga">
+          <label for="manga"> Manga </label> 
+
+          <input type="submit" value="Comprar"><br><br>
+      </form>
+<!-- Radio Button -->
+         <form> 
+             <h3>Radio Buttons </h3>
+             <input type="radio" name="linguagem-favorita" value="HTML" ID="html">
+             <label for="html">HTML</label>
+
+             <input type="radio" name="linguagem-favorita" value="CSS" id="css">
+             <label for="css">CSS</label>
+
+             <input type="submit" value="Enviar"><br><br>
+
+        </form>
+<!-- Select -->
+
+         <form>
+        <label for="cars"> Escolha um carro </label>
+        <select name="cars">
+            <option value="Fiat"> Fiat</option>
+            <option value="Chevrolet"> Chevrolet </option>
+            <option value="Ferrari"> Ferrari </option>
+            <option value="Audi"> Audi </option>
+        </select>
+        <!-- select Group -->
+        <select name="cars">
+            <optgroup label="carros suecos">
+                <option value="Volvo"> Volvo </option>
+                <option value="Saab"> Saab </option>
+            </optgroup>
+
+            <optgroup label="Carros Alemães">
+                <option value="Mercedes"> Mercedes </option>
+                <option value="Audi"> Audi </option>
+            </optgroup>
+        </select><br><br>
+
+      <!-- Texterea -->
+      <label for="message"> Mensagem </label><br><br>
+      <textarea rows="5" cols="35" name="message" id="message" placeholder="Digite uma mensagem"></textarea>
+
+          </form>
+    </body>
+</html>
